@@ -172,7 +172,7 @@
         }
       }
       detectApple()
-    })(window)</script><link rel="stylesheet" href="https://lf9-cdn-tos.bytecdntp.com/cdn/expire-1-M/Swiper/8.0.6/swiper-bundle.min.css"><link rel="stylesheet" href="https://jsd.onmicrosoft.cn/gh/zhheo/Post-Abstract-AI@0.14/tianli_gpt.css"><meta name="generator" content="Hexo 7.1.1"></head><body><div id="loading-box" onclick="document.getElementById(&quot;loading-box&quot;).classList.add(&quot;loaded&quot;)"><div class="loading-bg"><div class="loading-img"></div><div class="loading-image-dot"></div></div></div><style>.loading-img {
+    })(window)</script><link rel="stylesheet" href="https://lf9-cdn-tos.bytecdntp.com/cdn/expire-1-M/Swiper/8.0.6/swiper-bundle.min.css"><meta name="generator" content="Hexo 7.1.1"></head><body><div id="loading-box" onclick="document.getElementById(&quot;loading-box&quot;).classList.add(&quot;loaded&quot;)"><div class="loading-bg"><div class="loading-img"></div><div class="loading-image-dot"></div></div></div><style>.loading-img {
   background: url(https://q1.qlogo.cn/g?b=qq&nk=3521614880&s=5) no-repeat center center;
   background-size: cover;
 }
@@ -482,7 +482,38 @@ if(1) {
         else return ls[0] + '年' + ls[1] + '月' + ls[2] + '日 ' + ls[3] +':'+ ls[4]
     }
 }
-</script></div><hr class="custom-hr"/><div id="post-comment"><div class="comment-head"><div class="comment-headline"><i class="fas fa-comments fa-fw"></i><span> 评论</span></div></div><div class="comment-wrap"><div><div id="twikoo-wrap"></div></div></div></div></div></main><footer id="footer"><div id="footer-wrap"><div class="copyright">&copy;2020 - 2024 By 吴XiaoFan</div><div class="framework-info"><span>框架 </span><a target="_blank" rel="noopener" href="https://hexo.io">Hexo</a><span class="footer-separator">|</span><span>主题 </span><a target="_blank" rel="noopener" href="https://github.com/jerryc127/hexo-theme-butterfly">Butterfly</a></div></div></footer></div><div class="rightside-show" id="rightside"><div id="rightside-config-hide"><button id="darkmode" type="button" title="浅色和深色模式转换"><i class="fas fa-adjust"></i></button></div><div id="rightside-config-show"><button id="rightside-config" type="button" title="设置"><i class="fas fa-cog fa-spin"></i></button><a id="to_comment" href="#post-comment" title="直达评论"><i class="fas fa-comments"></i></a><button id="go-up" type="button" title="回到顶部"><span class="scroll-percent"></span><i class="fas fa-arrow-up"></i></button></div></div><div><script src="/js/utils.js?v=4.12.0"></script><script src="/js/main.js?v=4.12.0"></script><script src="https://cdn.staticfile.org/fancyapps-ui/5.0.32/fancybox/fancybox.umd.min.js"></script><script src="https://cdn.staticfile.org/instant.page/5.2.0/instantpage.min.js" type="module"></script><script src="https://lf6-cdn-tos.bytecdntp.com/cdn/expire-1-M/node-snackbar/0.1.16/snackbar.min.js"></script><div class="js-pjax"><script>(() => {
+</script></div><hr class="custom-hr"/><div id="post-comment"><div class="comment-head"><div class="comment-headline"><i class="fas fa-comments fa-fw"></i><span> 评论</span></div></div><div class="comment-wrap"><div><div id="twikoo-wrap"></div></div></div></div></div></main><div class="floating-image"><img id="image" src="https://acblog.s3.bitiful.net/2024/01/7a3e4552155d6786ac252723c3cad16c.png" onclick="randomQuote()"><div class="speech-bubble" id="speechBubble"></div></div><footer id="footer"><div id="footer-wrap"><div class="copyright">&copy;2020 - 2024 By 吴XiaoFan</div><div class="framework-info"><span>通过 HEXO 构建</span></div><script>var clicked = false;
+function randomQuote() {
+if (clicked) {
+return;
+}
+clicked = true;
+//数组
+var quotes = [
+"你好",
+"我是吴小凡的虚拟助手",
+"有什么可以帮助你的吗",
+"成功不是最终的，失败不是致命的：真正重要的是继续前进的勇气。",
+"相信你能做到，你已经成功了一半。"
+];
+//生成一个随机值
+var randomIndex = Math.floor(Math.random() * quotes.length);
+var quote = quotes[randomIndex];
+//获取元素
+var speechBubble = document.getElementById("speechBubble");
+// 设置内容为选定
+speechBubble.innerText = quote;
+//添加show类，触发动画
+speechBubble.classList.add("show");
+//3秒后隐藏
+setTimeout(function() {
+speechBubble.classList.remove("show");
+speechBubble.innerText = "";
+clicked = false;
+}, 2000);
+}
+randomQuote()
+document.addEventListener("pjax:complete", randomQuote)</script></div></footer></div><div class="rightside-show" id="rightside"><div id="rightside-config-hide"><button id="darkmode" type="button" title="浅色和深色模式转换"><i class="fas fa-adjust"></i></button></div><div id="rightside-config-show"><button id="rightside-config" type="button" title="设置"><i class="fas fa-cog fa-spin"></i></button><a id="to_comment" href="#post-comment" title="直达评论"><i class="fas fa-comments"></i></a><button id="go-up" type="button" title="回到顶部"><span class="scroll-percent"></span><i class="fas fa-arrow-up"></i></button></div></div><div><script src="/js/utils.js?v=4.12.0"></script><script src="/js/main.js?v=4.12.0"></script><script src="https://cdn.staticfile.org/fancyapps-ui/5.0.32/fancybox/fancybox.umd.min.js"></script><script src="https://cdn.staticfile.org/instant.page/5.2.0/instantpage.min.js" type="module"></script><script src="https://lf6-cdn-tos.bytecdntp.com/cdn/expire-1-M/node-snackbar/0.1.16/snackbar.min.js"></script><div class="js-pjax"><script>(() => {
   const init = () => {
     twikoo.init(Object.assign({
       el: '#twikoo-wrap',
@@ -523,7 +554,7 @@ if(1) {
   } else {
     window.loadOtherComment = loadTwikoo
   }
-})()</script></div><script src="https://lf3-cdn-tos.bytecdntp.com/cdn/expire-1-M/Swiper/8.0.6/swiper-bundle.min.js"></script><script src="https://lf6-cdn-tos.bytecdntp.com/cdn/expire-1-M/jquery/3.6.0/jquery.min.js"></script><script src="/js/newYear.js"></script><script src="/fanwu/random.js"></script><script>let tianliGPT_postSelector = '\#post \#article-container';let tianliGPT_key = 'aLMjHvnsvBaJ2XNsK8ZV';</script><script src="https://jsd.onmicrosoft.cn/gh/zhheo/Post-Abstract-AI@0.14/tianli_gpt.min.js"></script><script src="/js/hometop.js"></script><script src="https://lib.baomitu.com/pjax/0.2.8/pjax.min.js"></script><script>let pjaxSelectors = ["head > title","#config-diff","#body-wrap","#rightside-config-hide","#rightside-config-show",".js-pjax"]
+})()</script></div><script src="https://lf3-cdn-tos.bytecdntp.com/cdn/expire-1-M/Swiper/8.0.6/swiper-bundle.min.js"></script><script src="https://lf6-cdn-tos.bytecdntp.com/cdn/expire-1-M/jquery/3.6.0/jquery.min.js"></script><script src="https://jsd.onmicrosoft.cn/gh/qxchuckle/Post-Summary-AI@6.0/chuckle-post-ai.min.js"></script><script src="/js/newYear.js"></script><script src="/fanwu/random.js"></script><script data-pjax defer>new ChucklePostAI({el:'#post>#article-container',key:'aLMjHvnsvBaJ2XNsK8ZV',rec_method:'web',interface:{name:"FanGPT",introduce:"我是由吴XiaoFan开发的FanGPT，支持生成本文简介、推荐相关文章等。",version:"FanGPT",button:["介绍自己","推荐相关文章","生成AI简介","矩阵穿梭"],},hide_shuttle:true,pjax:true,eliminate:['819a33b8'],})</script><script src="/js/hometop.js"></script><script src="https://lib.baomitu.com/pjax/0.2.8/pjax.min.js"></script><script>let pjaxSelectors = ["head > title","#config-diff","#body-wrap","#rightside-config-hide","#rightside-config-show",".js-pjax"]
 
 var pjax = new Pjax({
   elements: 'a:not([target="_blank"])',
